@@ -21,8 +21,8 @@ This project implements audio signal processing using Discrete Fourier Transform
 ## Filtering Details
 
 - **Low-pass filter**: Allows frequencies below 800 Hz.
-- **High-pass filter**: Allows frequencies above 1200 Hz.
-- **Band-pass filter**: Allows frequencies between 800 Hz and 1200 Hz.
+- **High-pass filter**: Allows frequencies above 1000 Hz.
+- **Band-pass filter**: Allows frequencies between 600 Hz and 1400 Hz.
 
 ## How It Works
 
@@ -35,9 +35,9 @@ This project implements audio signal processing using Discrete Fourier Transform
 3. **Filtering**:
    - Three types of filters (low-pass, high-pass, and band-pass) are applied to the DFT-transformed signal.
    - These filters are implemented by zeroing out the undesired frequency components in the Fourier domain.
-4. **IDFT**:
+4. **InverseDFT**:
 
-   - The filtered signals are transformed back to the time domain using the `IDFT(X)` function.
+   - The filtered signals are transformed back to the time domain using the `InverseDFT(X)` function.
    - The filtered signals are normalized and played back.
 
 5. **Visualization**:
